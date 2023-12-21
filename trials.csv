@@ -1,0 +1,11 @@
+﻿stim_path,face_path,jitter_len
+./stims/1.jpg,./faces/1.jpg,4.2
+./stims/2.jpg,./faces/2.jpg,5.3
+./stims/3.jpg,./faces/3.jpg,4.8
+./stims/4.jpg,./faces/4.jpg,7.4
+./stims/5.jpg,./faces/5.jpg,4
+./stims/6.jpg,./faces/6.jpg,7.8
+./stims/7.jpg,./faces/7.jpg,7.4
+./stims/8.jpg,./faces/8.jpg,6.2
+./stims/9.jpg,./faces/9.jpg,6.5
+./stims/10.jpg,./faces/10.jpg,5.3
