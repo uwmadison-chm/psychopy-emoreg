@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2023.2.3">
+<PsychoPy2experiment encoding="utf-8" version="2023.1.2">
   <Settings>
     <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
@@ -74,22 +74,51 @@
   </Settings>
   <Routines>
     <Routine name="trial">
-      <RoutineSettingsComponent name="trial" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
+      <CodeComponent name="set_img_size" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="defaultFixPos = [0, (- 0.2)];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="defaultFixPos=[0, -0.20]&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="set_img_size" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="pre_stim_fix" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="pre_stim_fix" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="defaultFixPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <ImageComponent name="stimulus" plugin="None">
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <ImageComponent name="stim" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -101,22 +130,22 @@
         <Param val="$stim_path" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="stimulus" valType="code" updates="None" name="name"/>
+        <Param val="stim" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.7,None)" valType="list" updates="set every repeat" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="1" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="4.0" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <PolygonComponent name="fixation" plugin="None">
+      <PolygonComponent name="pre_face_fix" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
@@ -127,18 +156,18 @@
         <Param val="white" valType="color" updates="constant" name="lineColor"/>
         <Param val="1" valType="num" updates="constant" name="lineWidth"/>
         <Param val="4" valType="int" updates="constant" name="nVertices"/>
-        <Param val="fixation" valType="code" updates="None" name="name"/>
+        <Param val="pre_face_fix" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="defaultFixPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$stimulus.status==FINISHED" valType="code" updates="None" name="startVal"/>
+        <Param val="$stim.status==FINISHED" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="list" updates="constant" name="vertices"/>
@@ -158,19 +187,19 @@
         <Param val="neutral_face" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.15)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.6,None)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$fixation.status==FINISHED" valType="code" updates="None" name="startVal"/>
+        <Param val="$pre_face_fix.status==FINISHED" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <TextboxComponent name="jitter" plugin="None">
+      <TextboxComponent name="iti" plugin="None">
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
@@ -191,7 +220,7 @@
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="jitter" valType="code" updates="None" name="name"/>
+        <Param val="iti" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
@@ -205,7 +234,7 @@
         <Param val="condition" valType="str" updates="None" name="startType"/>
         <Param val="$neutral_face.status==FINISHED" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="$jitter_len" valType="code" updates="constant" name="stopVal"/>
+        <Param val="$intertrial_interval" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -215,8 +244,8 @@
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('stim_path', './stims/1.jpg'), ('face_path', './faces/1.jpg'), ('jitter_len', 4.2)]), OrderedDict([('stim_path', './stims/2.jpg'), ('face_path', './faces/2.jpg'), ('jitter_len', 5.3)]), OrderedDict([('stim_path', './stims/3.jpg'), ('face_path', './faces/3.jpg'), ('jitter_len', 4.8)]), OrderedDict([('stim_path', './stims/4.jpg'), ('face_path', './faces/4.jpg'), ('jitter_len', 7.4)]), OrderedDict([('stim_path', './stims/5.jpg'), ('face_path', './faces/5.jpg'), ('jitter_len', 4.0)]), OrderedDict([('stim_path', './stims/6.jpg'), ('face_path', './faces/6.jpg'), ('jitter_len', 7.8)]), OrderedDict([('stim_path', './stims/7.jpg'), ('face_path', './faces/7.jpg'), ('jitter_len', 7.4)]), OrderedDict([('stim_path', './stims/8.jpg'), ('face_path', './faces/8.jpg'), ('jitter_len', 6.2)]), OrderedDict([('stim_path', './stims/9.jpg'), ('face_path', './faces/9.jpg'), ('jitter_len', 6.5)]), OrderedDict([('stim_path', './stims/10.jpg'), ('face_path', './faces/10.jpg'), ('jitter_len', 5.3)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="/Users/nvanhaute/Repos/psychopy-emoreg/trials.csv" valType="file"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('stim_path', './stims/pln_06_f.jpg'), ('face_path', './faces/1.jpg'), ('intertrial_interval', 4.2)]), OrderedDict([('stim_path', './stims/pln_11_f.jpg'), ('face_path', './faces/2.jpg'), ('intertrial_interval', 5.3)]), OrderedDict([('stim_path', './stims/pln_14_d.jpg'), ('face_path', './faces/3.jpg'), ('intertrial_interval', 4.8)]), OrderedDict([('stim_path', './stims/pls_05_b.jpg'), ('face_path', './faces/4.jpg'), ('intertrial_interval', 7.4)]), OrderedDict([('stim_path', './stims/pls_06_f.jpg'), ('face_path', './faces/5.jpg'), ('intertrial_interval', 4.0)]), OrderedDict([('stim_path', './stims/pls_06_l.jpg'), ('face_path', './faces/6.jpg'), ('intertrial_interval', 7.8)]), OrderedDict([('stim_path', './stims/suf_07_g.jpg'), ('face_path', './faces/7.jpg'), ('intertrial_interval', 7.4)]), OrderedDict([('stim_path', './stims/suf_08_a.jpg'), ('face_path', './faces/8.jpg'), ('intertrial_interval', 6.2)]), OrderedDict([('stim_path', './stims/suf_12_h.jpg'), ('face_path', './faces/9.jpg'), ('intertrial_interval', 6.5)]), OrderedDict([('stim_path', './stims/thr_10_e.jpg'), ('face_path', './faces/10.jpg'), ('intertrial_interval', 5.3)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trials.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
