@@ -10,7 +10,7 @@
 ./stims/pls_06_j.jpg,./faces/42.jpg,positive,7200,2033,15533,15.533,142.783
 ./stims/suf_08_a.jpg,./faces/16.jpg,negative,9000,2867,16367,16.367,159.15
 ./stims/pln_11_l.jpg,./faces/5.jpg,positive,7200,2267,15767,15.767,174.917
-./stims/pln_14_d.jpg,./faces/2.jpg,positive,9900,2050,15550,15.55,190.467
+./stims/pln_14_d.jpg,,positive,9900,2050,15550,15.55,190.467
 ./stims/suf_12_g.jpg,./faces/34.jpg,negative,7200,2983,16483,16.483,206.95
 ./stims/pls_06_l.jpg,./faces/15.jpg,positive,4500,2183,15683,15.683,222.633
 ./stims/pln_11_f.jpg,./faces/41.jpg,positive,7200,2017,15517,15.517,238.15
@@ -27,7 +27,7 @@
 ./stims/pln_06_a.jpg,./faces/11.jpg,positive,13500,2167,15667,15.667,414.601
 ./stims/suf_04_j.jpg,./faces/18.jpg,negative,7200,2317,15817,15.817,430.418
 ./stims/suf_12_k.jpg,./faces/43.jpg,negative,4500,2783,16283,16.283,446.701
-./stims/pln_06_g.jpg,./faces/7.jpg,positive,7200,2633,16133,16.133,462.834
+./stims/pln_06_g.jpg,,positive,7200,2633,16133,16.133,462.834
 ./stims/hrm_15_e.jpg,./faces/44.jpg,negative,12600,2800,16300,16.3,479.134
 ./stims/suf_05_h.jpg,./faces/48.jpg,negative,7200,2217,15717,15.717,494.851
 ./stims/pls_12_i.jpg,./faces/21.jpg,positive,4500,2800,16300,16.3,511.151
@@ -60,7 +60,7 @@
 ./stims/suf_14_i.jpg,./faces/41A.jpg,negative,7200,2700,16200,16.2,947.268
 ./stims/pls_07_k.jpg,./faces/10A.jpg,positive,8100,2433,15933,15.933,963.201
 ./stims/hrm_14_h.jpg,./faces/3A.jpg,negative,7200,2283,15783,15.783,978.984
-./stims/hrm_15_j.jpg,./faces/14A.jpg,negative,10800,2600,16100,16.1,995.084
+./stims/hrm_15_j.jpg,,negative,10800,2600,16100,16.1,995.084
 ./stims/hrm_15_f.jpg,./faces/12A.jpg,negative,7200,2600,16100,16.1,1011.184
 ./stims/pln_07_d.jpg,./faces/46A.jpg,positive,6300,2333,15833,15.833,1027.017
 ./stims/pls_14_f.jpg,./faces/8A.jpg,positive,7200,2500,16000,16,1043.017
@@ -79,7 +79,7 @@
 ./stims/thr_14_j.jpg,./faces/49A.jpg,negative,12600,2717,16217,16.217,1250.901
 ./stims/hrm_15_a.jpg,./faces/39A.jpg,negative,7200,2600,16100,16.1,1267.001
 ./stims/pls_05_k.jpg,./faces/17A.jpg,positive,5400,2667,16167,16.167,1283.168
-./stims/pln_03_i.jpg,./faces/20A.jpg,positive,7200,2333,15833,15.833,1299.001
+./stims/pln_03_i.jpg,,positive,7200,2333,15833,15.833,1299.001
 ./stims/suf_14_f.jpg,./faces/47A.jpg,negative,8100,2817,16317,16.317,1315.318
 ./stims/pls_08_b.jpg,./faces/6A.jpg,positive,7200,2783,16283,16.283,1331.601
 ./stims/pls_12_h.jpg,./faces/35A.jpg,positive,5400,2817,16317,16.317,1347.918
