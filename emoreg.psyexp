@@ -165,6 +165,23 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <CodeComponent name="declarations_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="responseKeys=[['b','index finger button'],['y', 'middle finger button']]&amp;#10;if expInfo['inputType']=='k':&amp;#10;    responseKeys=[['h', 'H key'],['j', 'J key']]&amp;#10;    &amp;#10;def getKeyForGender(gender):&amp;#10;    if gender == 'm':&amp;#10;        return responseKeys[0][0]&amp;#10;    return responseKeys[1][0]&amp;#10;    &amp;#10;def getFeedbackColor(isCorrect):&amp;#10;    return 'green' if isCorrect else 'red'&amp;#10; &amp;#10;def getFeedbackText(isCorrect):&amp;#10;    return '+ correct +' if isCorrect else 'x wrong x'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="responseKeys = [[&quot;b&quot;, &quot;index finger button&quot;], [&quot;y&quot;, &quot;middle finger button&quot;]];&amp;#10;if ((expInfo[&quot;inputType&quot;] === &quot;k&quot;)) {&amp;#10;    responseKeys = [[&quot;h&quot;, &quot;H key&quot;], [&quot;j&quot;, &quot;J key&quot;]];&amp;#10;}&amp;#10;function getKeyForGender(gender) {&amp;#10;    if ((gender === &quot;m&quot;)) {&amp;#10;        return responseKeys[0][0];&amp;#10;    }&amp;#10;    return responseKeys[1][0];&amp;#10;}&amp;#10;function getFeedbackColor(isCorrect) {&amp;#10;    return (isCorrect ? &quot;green&quot; : &quot;red&quot;);&amp;#10;}&amp;#10;function getFeedbackText(isCorrect) {&amp;#10;    return (isCorrect ? &quot;+ correct +&quot; : &quot;x wrong x&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="declarations_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="baseline">
       <RoutineSettingsComponent name="baseline" plugin="None">
@@ -182,23 +199,6 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <CodeComponent name="declarations" plugin="None">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="responseKeys=[['b','index finger button'],['y', 'middle finger button']]&amp;#10;if expInfo['inputType']=='k':&amp;#10;    responseKeys=[['f', 'F key'],['j', 'J key']]&amp;#10;    &amp;#10;def getKeyForGender(gender):&amp;#10;    if gender == 'm':&amp;#10;        return responseKeys[0][0]&amp;#10;    return responseKeys[1][0]&amp;#10;    &amp;#10;def getFeedbackColor(isCorrect):&amp;#10;    return 'green' if isCorrect else 'red'&amp;#10; &amp;#10;def getFeedbackText(isCorrect):&amp;#10;    return '+ correct +' if isCorrect else 'x wrong x'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="responseKeys = [[&quot;b&quot;, &quot;index finger button&quot;], [&quot;y&quot;, &quot;middle finger button&quot;]];&amp;#10;if ((expInfo[&quot;inputType&quot;] === &quot;k&quot;)) {&amp;#10;    responseKeys = [[&quot;f&quot;, &quot;F key&quot;], [&quot;j&quot;, &quot;J key&quot;]];&amp;#10;}&amp;#10;function getKeyForGender(gender) {&amp;#10;    if ((gender === &quot;m&quot;)) {&amp;#10;        return responseKeys[0][0];&amp;#10;    }&amp;#10;    return responseKeys[1][0];&amp;#10;}&amp;#10;function getFeedbackColor(isCorrect) {&amp;#10;    return (isCorrect ? &quot;green&quot; : &quot;red&quot;);&amp;#10;}&amp;#10;function getFeedbackText(isCorrect) {&amp;#10;    return (isCorrect ? &quot;+ correct +&quot; : &quot;x wrong x&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="declarations" valType="code" updates="None" name="name"/>
-      </CodeComponent>
       <PolygonComponent name="baseline_fixation" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -650,11 +650,11 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Now, we'll have you test your button box to ensure that everything is working as expected.&amp;#10;&amp;#10;Press the index finger (positive) button now." valType="str" updates="constant" name="text"/>
+        <Param val="$f&quot;Now, we'll have you test your button box to ensure that everything is working as expected.\n\nPress the {responseKeys[0][1]} now. This button is for positive images.&quot;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
       <KeyboardComponent name="key_resp_3" plugin="None">
-        <Param val="'b'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="responseKeys[0][0]" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
@@ -726,11 +726,11 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$f&quot;Great!\nPress the middle finger (negative) button now.&quot;" valType="str" updates="constant" name="text"/>
+        <Param val="$f&quot;Great!\nPress the {responseKeys[1][1]} button now. This is for negative images.&quot;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
       <KeyboardComponent name="key_resp_4" plugin="None">
-        <Param val="'y'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="responseKeys[1][0]" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
