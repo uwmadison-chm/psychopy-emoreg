@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s_%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'], expInfo['time'], &quot;full&quot; if expInfo['start_at_2nd_half'] == &quot;n&quot; else &quot;partial&quot;)" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': '', 'session': '001', 'inputType': 'b', 'start_at_2nd_half': 'n', 'time': 'a', 'counterbalance': '0'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': '', 'session': '001', 'inputType': &quot;['b', 'k']&quot;, 'start_at_2nd_half': 'n', 'time': 'a', 'counterbalance': '0'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -350,11 +350,11 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$face_path.split(',')[0] if expInfo['counterbalance']=='0' else face_path.split(',')[1][1:]" valType="file" updates="set every repeat" name="image"/>
+        <Param val="$'./faces/1.jpg' if face_path == ',' else face_path.split(',')[0] if expInfo['counterbalance']=='0' else face_path.split(',')[1][1:]" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="neutral_face" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0 if face_path == ',' else 1" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, -0.15)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>

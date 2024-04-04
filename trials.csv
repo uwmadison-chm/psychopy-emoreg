@@ -8,7 +8,7 @@
 ./stims/pls_05_b.jpg,"./faces/49.jpg, ./faces/36A.jpg",positive,7200,2300,15800,15.8,110.8
 ./stims/pls_08_a.jpg,"./faces/41A.jpg, ./faces/7A.jpg",positive,10800,2950,16450,16.45,127.25
 ./stims/pls_06_j.jpg,"./faces/6A.jpg, ./faces/34.jpg",positive,7200,2033,15533,15.533,142.783
-./stims/suf_08_a.jpg,"./faces/34.jpg, ./faces/6A.jpg",negative,9000,2867,16367,16.367,159.15
+./stims/suf_08_a.jpg,",",negative,9000,2867,16367,16.367,159.15
 ./stims/pln_11_l.jpg,"./faces/8A.jpg, ./faces/6.jpg",positive,7200,2267,15767,15.767,174.917
 ./stims/pln_14_d.jpg,"./faces/17A.jpg, ./faces/4.jpg",positive,9900,2050,15550,15.55,190.467
 ./stims/suf_12_g.jpg,"./faces/6.jpg, ./faces/8A.jpg",negative,7200,2983,16483,16.483,206.95
@@ -28,7 +28,7 @@
 ./stims/suf_04_j.jpg,"./faces/3A.jpg, ./faces/44A.jpg",negative,7200,2317,15817,15.817,430.418
 ./stims/suf_12_k.jpg,"./faces/39A.jpg, ./faces/1.jpg",negative,4500,2783,16283,16.283,446.701
 ./stims/pln_06_g.jpg,"./faces/19A.jpg, ./faces/37A.jpg",positive,7200,2633,16133,16.133,462.834
-./stims/hrm_15_e.jpg,"./faces/37A.jpg, ./faces/19A.jpg",negative,12600,2800,16300,16.3,479.134
+./stims/hrm_15_e.jpg,",",negative,12600,2800,16300,16.3,479.134
 ./stims/suf_05_h.jpg,"./faces/48.jpg, ./faces/21A.jpg",negative,7200,2217,15717,15.717,494.851
 ./stims/pls_12_i.jpg,"./faces/21A.jpg, ./faces/48.jpg",positive,4500,2800,16300,16.3,511.151
 ./stims/pls_14_i.jpg,"./faces/16A.jpg, ./faces/4A.jpg",positive,7200,2533,16033,16.033,527.184
@@ -52,7 +52,7 @@
 ./stims/pls_12_b.jpg,"./faces/7.jpg, ./faces/31A.jpg",positive,7200,2817,16317,16.317,818.452
 ./stims/pln_12_l.jpg,"./faces/42A.jpg, ./faces/9A.jpg",positive,10800,2017,15517,15.517,833.969
 ./stims/thr_14_g.jpg,"./faces/31A.jpg, ./faces/7.jpg",negative,7200,2583,16083,16.083,850.052
-./stims/suf_14_c.jpg,"./faces/9A.jpg, ./faces/42A.jpg",negative,9000,2983,16483,16.483,866.535
+./stims/suf_14_c.jpg,",",negative,9000,2983,16483,16.483,866.535
 ./stims/thr_08_b.jpg,"./faces/13A.jpg, ./faces/33.jpg",negative,7200,2817,16317,16.317,882.852
 ./stims/pln_12_e.jpg,"./faces/33.jpg, ./faces/13A.jpg",positive,9900,2633,16133,16.133,898.985
 ./stims/thr_14_b.jpg,"./faces/18.jpg, ./faces/32A.jpg",negative,7200,2833,16333,16.333,915.318
@@ -66,7 +66,7 @@
 ./stims/pls_14_f.jpg,"./faces/38A.jpg, ./faces/19.jpg",positive,7200,2500,16000,16,1043.017
 ./stims/suf_14_h.jpg,"./faces/22.jpg, ./faces/50A.jpg",negative,5400,2633,16133,16.133,1059.15
 ./stims/pls_05_h.jpg,"./faces/30.jpg, ./faces/14.jpg",positive,7200,2017,15517,15.517,1074.667
-./stims/thr_14_l.jpg,"./faces/23A.jpg, ./faces/9.jpg",negative,4500,2117,15617,15.617,1090.284
+./stims/thr_14_l.jpg,",",negative,4500,2117,15617,15.617,1090.284
 ./stims/pls_08_c.jpg,"./faces/50A.jpg, ./faces/22.jpg",positive,7200,2167,15667,15.667,1105.951
 ./stims/suf_14_g.jpg,"./faces/21.jpg, ./faces/38.jpg",negative,13500,2833,16333,16.333,1122.284
 ./stims/pls_14_l.jpg,"./faces/9.jpg, ./faces/23A.jpg",positive,7200,2550,16050,16.05,1138.334
