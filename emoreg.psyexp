@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s_%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'], expInfo['time'], &quot;full&quot; if expInfo['start_at_2nd_half'] == &quot;n&quot; else &quot;partial&quot;)" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'participant': '', 'session': '001', 'inputType': &quot;['b', 'k']&quot;, 'start_at_2nd_half': 'n', 'time': 'a', 'counterbalance': '0'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': '', 'session': '001', 'inputType': &quot;['b', 'k']&quot;, 'start_at_2nd_half': &quot;['n', 'y']&quot;, 'time': &quot;['a', 'b']&quot;, 'counterbalance': '[0, 1]'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -26,7 +26,7 @@
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[2560, 1440]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="none" valType="str" updates="None" name="backgroundFit"/>
     <Param val="" valType="str" updates="None" name="backgroundImg"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
@@ -143,7 +143,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$f&quot;In this task, you will be shown a series of images followed by faces.\nWhen the stimulus image appears on the screen, press the {responseKeys[0][1]} if it is a positive image and the {responseKeys[1][1]} if it is a negative image.\nPress any button to continue.&quot;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="$f&quot;In this task, you will be shown a series of pictures followed by faces.\nWhen the picture appears on the screen, press the {responseKeys[0][1]} if it is a positive image and the {responseKeys[1][1]} if it is a negative image.\nPress any button to continue.&quot;" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
       <KeyboardComponent name="key_resp_6" plugin="None">
@@ -274,7 +274,7 @@
         <Param val="pre_stim_fix" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="defaultFixPos" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="(0, -0.20)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -328,7 +328,7 @@
         <Param val="pre_face_fix" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="defaultFixPos" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="(0, -0.20)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -356,9 +356,9 @@
         <Param val="neutral_face" valType="code" updates="None" name="name"/>
         <Param val="0 if face_path == ',' else 1" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.6,None)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.5,None)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
         <Param val="$pre_face_fix.status==FINISHED" valType="code" updates="None" name="startVal"/>
